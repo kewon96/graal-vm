@@ -44,3 +44,11 @@ graalvmNative {
         }
     }
 }
+
+bootJar {
+    manifest {
+        attributes(
+                'Main-Class': 'co.kr.graal_vm.GraalVmApplication'
+        )
+    }
+}
