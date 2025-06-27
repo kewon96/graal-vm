@@ -35,3 +35,12 @@ dependencies {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+graalvmNative {
+    binaries {
+        main {
+            imageName = 'graal-vm-app'
+            buildArgs.add('--no-fallback')
+        }
+    }
+}
